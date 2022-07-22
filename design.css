@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  margin-left: 230px;
+  position: absolute;
+  font-weight: 1000;
+  font-size: 30px;
+}
+body {
+  background-image: linear-gradient(to bottom left, #ff6666 50%, #ff9900);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.log {
+  font-family: "Roboto", sans-serif;
+  margin-left: 500px;
+  margin-right: 400px;
+  margin-top: 100px;
+  border-radius: 9px;
+}
+.name {
+  /*made the first and last name input be on the same line*/
+  padding-top: 80px;
+  display: flex;
+}
+.fa-solid {
+  /*used to position the icons for first name and last name*/
+  margin-left: 200px;
+  position: absolute;
+  margin-top: 2px;
+}
+.lname {
+  /*shifted last name input into position*/
+  margin-left: 100px;
+}
+form {
+  position: absolute;
+}
+.email {
+  padding-top: 50px;
+  font-family: "Roboto", sans-serif;
+}
+.password {
+  padding-top: 50px;
+}
+.ep {
+  /*elongated the email space*/
+  padding-right: 330px;
+}
+#pword {
+  /*elongated the password space*/
+  padding-right: 398px;
+}
+button {
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+  border: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  background-image: linear-gradient(to bottom left, #ff6666 50%, #ff9900);
+  background-repeat: no-repeat;
+  padding: 10px 200px 10px 220px;
+  cursor: pointer;
+}
+input {
+  outline: 0;
+  color: black;
+  background: 0;
+  border: 0;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+}
+::placeholder {
+  /*changed the placeholder color to black*/
+  color: black;
+}
+.fa-envelope,
+.fa-eye-slash {
+  /*set the icons for email and password in place*/
+  margin-left: 530px;
+  position: absolute;
+  margin-top: 2px;
+}
+footer {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 425px;
+  margin-left: 170px;
+  position: absolute;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: none;
+  margin-top: 9px;
+  height: 16px;
+  width: 16px;
+  border: 1px solid black;
+  color: white;
+}
+input[type="checkbox"]:checked {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+input[type="checkbox"]:after {
+  content: " ";
+  position: relative;
+  left: 40%;
+  top: 50%;
+  width: 15%;
+  height: 140%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(50deg);
+  display: none;
+}
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+#container {
+  background: inherit;
+  position: absolute;
+}
+#container:before {
+  margin-left: 380px;
+  margin-top: 50px;
+  width: 800px;
+  height: 530px;
+  content: "";
+  position: absolute;
+  background: inherit;
+  box-shadow: inset 0 0 0 300px rgba(255, 255, 255, 0.2);
+  filter: blur(5px);
+  border: 3px solid whitesmoke;
+  border-radius: 16px;
+}
+@media (max-width: 430px) {
+  #container:before {
+    margin-left: 50px;
+    width: 500px;
+    height: 600px;
+    content: "";
+  }
+  header {
+    margin-left: 160px;
+  }
+  .log {
+    margin-left: 130px;
+  }
+  .name {
+    /*made the first and last name input be on the same line*/
+    display: block;
+  }
+  .fname {
+    margin-left: 100px;
+  }
+  .lname {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .email {
+    font-family: "Roboto", sans-serif;
+    margin-left: 100px;
+  }
+  .password {
+    font-family: "Roboto", sans-serif;
+    padding-left: 100px;
+  }
+  .ep {
+    /*elongated the email space*/
+    padding-right: 1px;
+  }
+  #pword {
+    /*elongated the password space*/
+    padding-right: 65px;
+  }
+  .fa-envelope,
+  .fa-eye-slash {
+    /*set the icons for email and password in place*/
+    margin-left: 210px;
+    position: absolute;
+    margin-top: 2px;
+  }
+  button {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    border: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+    background-image: linear-gradient(to bottom left, #ff6666 50%, #ff9900);
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+  }
+  footer {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 505px;
+    margin-left: 120px;
+    position: absolute;
+  }
+}
