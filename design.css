@@ -147,13 +147,16 @@ input[type="checkbox"]:checked:after {
 }
 @media (max-width: 430px) {
   #container:before {
-    margin-left: 50px;
-    width: 500px;
+  
+    width: 400px;
     height: 600px;
     content: "";
+    right: 10%;
+  
+    
   }
   header {
-    margin-left: 160px;
+    margin-left: 90px;
   }
   .log {
     margin-left: 130px;
@@ -163,19 +166,19 @@ input[type="checkbox"]:checked:after {
     display: block;
   }
   .fname {
-    margin-left: 100px;
+    margin-left: 20px;
   }
   .lname {
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 20px;
   }
   .email {
     font-family: "Roboto", sans-serif;
-    margin-left: 100px;
+    margin-left: 20px;
   }
   .password {
     font-family: "Roboto", sans-serif;
-    padding-left: 100px;
+    padding-left: 20px;
   }
   .ep {
     /*elongated the email space*/
@@ -199,7 +202,7 @@ input[type="checkbox"]:checked:after {
     border: 0;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 150px;
+    margin-left: 80px;
     background-image: linear-gradient(to bottom left, #ff6666 50%, #ff9900);
     background-repeat: no-repeat;
     padding: 10px 20px 10px 20px;
@@ -209,7 +212,7 @@ input[type="checkbox"]:checked:after {
     font-weight: 600;
     font-size: 16px;
     margin-top: 505px;
-    margin-left: 120px;
+    margin-left: 30px;
     position: absolute;
   }
 }
